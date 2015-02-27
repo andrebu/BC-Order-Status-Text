@@ -13,7 +13,7 @@ This module, BigCommerce Account Page Order Status Text, allows a BigCommerce st
   1. To access your WebDAV panel, BigCommerce gives you instructions in your Admin Panel.  
   2. Click "Design" in the top right corner of your store admin panel.  
   3. Then click "WebDAV" in the "Current Theme" section and follow the instructions
-2. Add %%Panel.OrderStatusText%% to Panels/category.html
+2. Add %%Panel.OrderStatusText%% to Panels/AccountOrderStatus.html
   + Example:
 ```HTML
 <div class="Block Moveable Panel AccountOrderStatus" id="AccountOrderStatus">
@@ -26,9 +26,9 @@ This module, BigCommerce Account Page Order Status Text, allows a BigCommerce st
 
             <ul class="AccountOrderStatusList">
                 %%SNIPPET_AccountOrderStatus%%
- ​<!-- Put panel as it is here, right before the closing body tag -->
-               %%Panel.OrderStatusText%%
- <!-- Put panel as it is here, right before the closing body tag -->
+ ​<!-- Put panel as it is here, right after AccountOrderStatus tag -->
+                %%Panel.OrderStatusText%%
+ <!-- Put panel as it is here, right after AccountOrderStatus tag -->
            </ul>
         </div>
 
