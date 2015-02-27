@@ -1,0 +1,13 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    var orderStatusText = $('.ShippingProviderList').find("span.ShipperName:contains('Free Shipping')");
+
+    shippingItem1.text('Free Shipping \(3-6 business days\)');
+    shippingItem2.text('FedEx Ground \(3-6 business days\)');
+    shippingItem3.text('USPS Priority Mail \(1-3 business days\) - Best Value!');
+    	shippingItem3.parent().append(bestValue);
+    shippingItem4.text('FedEx 2-Day \(1-2 business days\)');
+    shippingItem5.text('USPS Priority Express \(1-2 business days\)');
+    shippingItem6.text('FedEx Overnight \(1 business day\)');
+  });
+</script>
