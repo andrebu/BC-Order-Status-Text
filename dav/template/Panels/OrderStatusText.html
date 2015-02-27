@@ -1,10 +1,6 @@
 <script type="text/javascript">
-  $(document).ready(function(){
-    var orderStatusText = $('.AccountOrderStatusList .li-list').ea(0).find('em').text();
-    
-    if (orderStatusText == 'Awaiting Fulfillment') {
-	    orderStatusText.text('Being Processed');
-    }
-    
-  });
+	$(document).ready(function(){
+		$('.AccountOrderStatusList .li-list').find('em:contains("Awaiting Fulfillment")').text('Being Processed');
+		$('.AccountOrderStatusList .li-list').find('em:contains("Awaiting Shipment")').text('Being Processed');
+	});
 </script>
